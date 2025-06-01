@@ -6,7 +6,7 @@ export default function Home() {
       <h1>Project Aegis</h1>
       <p>
         Project Aegis is an open source weapons platform that uses drones to
-        survey areas for protection.
+        protect areas with other weapon system integrations.
       </p>
     </section>
   );
