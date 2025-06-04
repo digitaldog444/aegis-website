@@ -1,3 +1,4 @@
+import Link from "next/link";
 const DocsPage = () => {
   return (
     <main className="bg-gray-950 text-gray-100 min-h-screen px-6 py-12">
@@ -18,36 +19,36 @@ const DocsPage = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-              <a
+              <Link
                 href="/docs/install"
                 className="text-green-400 hover:underline"
               >
                 Installation & Environment Setup
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/hardware"
                 className="text-green-400 hover:underline"
               >
                 Required Hardware & Materials
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/first-build"
                 className="text-green-400 hover:underline"
               >
                 Your First Turret Build
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/raspberry-pi"
                 className="text-green-400 hover:underline"
               >
                 Flashing AegisOS on Raspberry Pi
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
@@ -59,30 +60,33 @@ const DocsPage = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-              <a
+              <Link
                 href="/docs/turret-control"
                 className="text-blue-400 hover:underline"
               >
                 Turret Control Module (pan/tilt/fire)
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/remote-ops"
                 className="text-blue-400 hover:underline"
               >
                 Remote Ops Interface
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/docs/vision" className="text-blue-400 hover:underline">
+              <Link
+                href="/docs/vision"
+                className="text-blue-400 hover:underline"
+              >
                 Computer Vision Targeting (OpenCV)
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/docs/api" className="text-blue-400 hover:underline">
+              <Link href="/docs/api" className="text-blue-400 hover:underline">
                 REST API & Command Protocol
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
@@ -99,25 +103,25 @@ const DocsPage = () => {
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-              <a
+              <Link
                 href="/docs/code-of-conduct"
                 className="text-red-400 hover:underline"
               >
                 Code of Conduct
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/docs/legal" className="text-red-400 hover:underline">
+              <Link href="/docs/legal" className="text-red-400 hover:underline">
                 Legal & Ethical Guidelines
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/contributing"
                 className="text-red-400 hover:underline"
               >
                 Contributing Safely
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
@@ -129,28 +133,28 @@ const DocsPage = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-              <a
+              <Link
                 href="/docs/custom-payloads"
                 className="text-yellow-400 hover:underline"
               >
                 Building Custom Payload Modules
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/autonomous-mode"
                 className="text-yellow-400 hover:underline"
               >
                 Running in Autonomous Mode
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/docs/networking"
                 className="text-yellow-400 hover:underline"
               >
                 Secure Networking & Remote Access
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
@@ -166,20 +170,20 @@ const DocsPage = () => {
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-              <a
+              <Link
                 href="https://discord.gg/pJrg7ZGzBq"
                 className="text-cyan-400 hover:underline"
               >
                 Discord
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="mailto:digitaldog444@gmail.com"
                 className="text-cyan-400 hover:underline"
               >
                 Email Support
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
