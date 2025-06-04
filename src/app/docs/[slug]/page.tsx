@@ -8,12 +8,12 @@ const DocPage = ({ params }: { params: { slug: string } }) => {
   const [contents, setContents] = useState("");
   const getArticle = async () => {
     const { slug } = await params;
-    let response = await fetch("/api/get-article", {
+    const response = await fetch("/api/get-article", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ slug }),
     });
-    let json = await response.json();
+    const json = await response.json();
     if (json.success) {
       setContents(json.article);
     } else {

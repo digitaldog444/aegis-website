@@ -1,21 +1,22 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <section>
       <header className="border-b border-gray-800 p-6 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-white">Project Aegis</h1>
         <nav className="space-x-6">
-          <a href="#mission" className="hover:underline text-gray-300">
+          <Link href="#mission" className="hover:underline text-gray-300">
             Mission
-          </a>
-          <a href="#projects" className="hover:underline text-gray-300">
+          </Link>
+          <Link href="#projects" className="hover:underline text-gray-300">
             Projects
-          </a>
-          <a href="#docs" className="hover:underline text-gray-300">
+          </Link>
+          <Link href="#docs" className="hover:underline text-gray-300">
             Documentation
-          </a>
-          <a href="#community" className="hover:underline text-gray-300">
+          </Link>
+          <Link href="#community" className="hover:underline text-gray-300">
             Community
-          </a>
+          </Link>
         </nav>
       </header>
 
@@ -30,18 +31,18 @@ export default function Home() {
           goal is transparency and freedom through code—not chaos.
         </p>
         <div className="mt-8">
-          <a
+          <Link
             href="#projects"
             className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold"
           >
             Explore Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="#docs"
             className="ml-4 border border-green-600 text-green-400 px-6 py-3 rounded-xl hover:bg-green-900"
           >
             Read the Docs
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -100,12 +101,12 @@ export default function Home() {
           Get started with tutorials, schematics, and APIs for building and
           programming your own defense systems.
         </p>
-        <a
+        <Link
           href="/docs"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-semibold"
         >
           View Full Documentation
-        </a>
+        </Link>
       </section>
 
       <section id="community" className="p-12">
@@ -116,13 +117,13 @@ export default function Home() {
           open.
         </p>
         <div className="space-x-4">
-          <a
+          <Link
             href="https://discord.gg/pJrg7ZGzBq"
             target="_blank"
             className="text-white border border-gray-700 px-4 py-2 rounded hover:bg-gray-800"
           >
             Discord
-          </a>
+          </Link>
         </div>
       </section>
 
