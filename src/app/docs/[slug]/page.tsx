@@ -1,23 +1,30 @@
-import fs from "fs";
+"use client";
 import Link from "next/link";
-import path from "path";
+
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-const DocPage = async ({ params }: { params: { slug: string } }) => {
-  const { slug } = await params;
-  const filePath = path.join(process.cwd(), "src/docs/", `${slug}.md`);
-  if (!fs.existsSync(filePath)) {
-    return (
-      <section className="max-w-128 m-auto">
-        <div>
-          <h1>404 - Page not found</h1>
-          <Link href="/docs">Docs</Link>
-        </div>
-      </section>
-    );
-  }
-  const fileContents = fs.readFileSync(filePath, "utf-8");
-  if (!fileContents) {
+const DocPage = ({ params }: { params: { slug: string } }) => {
+  const [contents, setContents] = useState("");
+  const getArticle = async () => {
+    const { slug } = await params;
+    let response = await fetch("/api/get-article", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slug }),
+    });
+    let json = await response.json();
+    if (json.success) {
+      setContents(json.article);
+    } else {
+      setContents("# 404 Page not found!");
+    }
+  };
+
+  useEffect(() => {
+    getArticle();
+  }, []);
+  if (!contents) {
     return (
       <section className="max-w-128 m-auto">
         <div>
@@ -29,7 +36,7 @@ const DocPage = async ({ params }: { params: { slug: string } }) => {
   }
   return (
     <section className="max-w-128 m-auto">
-      <ReactMarkdown>{fileContents}</ReactMarkdown>
+      <ReactMarkdown>{contents}</ReactMarkdown>
     </section>
   );
 };
