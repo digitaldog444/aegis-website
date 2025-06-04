@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       <section id="mission" className="bg-gray-900 p-12">
-        <h3 className="text-3xl font-bold mb-4 text-white">
+        <h3 className="text-3xl font-bold mb-4 text-center text-white">
           Mission Statement
         </h3>
         <p className="text-gray-300 max-w-3xl mx-auto">
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
             <h4 className="text-xl font-semibold mb-2 text-white">
-              Aegis Turret v2
+              Aegis Turret v1
             </h4>
             <p className="text-gray-400 text-sm">
               An open source pan-tilt auto-targeting turret with modular payload
@@ -117,17 +117,11 @@ export default function Home() {
         </p>
         <div className="space-x-4">
           <a
-            href="https://github.com/projectaegis"
+            href="https://discord.gg/pJrg7ZGzBq"
             target="_blank"
             className="text-white border border-gray-700 px-4 py-2 rounded hover:bg-gray-800"
           >
-            GitHub
-          </a>
-          <a
-            href="/forum"
-            className="text-white border border-gray-700 px-4 py-2 rounded hover:bg-gray-800"
-          >
-            Community Forum
+            Discord
           </a>
         </div>
       </section>
