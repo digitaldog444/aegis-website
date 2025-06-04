@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-const DocPage = ({ params }: { params: { slug: string } }) => {
+const DocPage = ({ params }: any) => {
   const [contents, setContents] = useState("");
   const getArticle = async () => {
     const { slug } = await params;
