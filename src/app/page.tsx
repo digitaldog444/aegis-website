@@ -126,6 +126,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section>
+        <p className="p-4 text-center">
+          open tech, open knowledge, and open power
+        </p>
+      </section>
 
       <footer className="p-6 border-t border-gray-800 text-center text-sm text-gray-500">
         &copy; 2025 Project Aegis. All open source. All rights reserved.
