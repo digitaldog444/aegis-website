@@ -50,6 +50,14 @@ const DocsPage = () => {
                 Flashing AegisOS on Raspberry Pi
               </Link>
             </li>
+            <li>
+              <Link
+                href="/docs/setting-up-opencv"
+                className="text-green-400 hover:underline"
+              >
+                Setting up OpenCV
+              </Link>
+            </li>
           </ul>
         </section>
 
