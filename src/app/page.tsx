@@ -6,8 +6,9 @@ import React from "react";
 // import { Shield, Settings, Users, Code, Globe, Zap } from 'lucide-react';
 
 // Placeholder for Lucide Icons if not installed via npm
-const ShieldIcon = () => (
+const ShieldIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -22,8 +23,9 @@ const ShieldIcon = () => (
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
-const SettingsIcon = () => (
+const SettingsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -39,8 +41,9 @@ const SettingsIcon = () => (
     <circle cx="12" cy="12" r="3" />
   </svg>
 );
-const UsersIcon = () => (
+const UsersIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -58,8 +61,9 @@ const UsersIcon = () => (
     <circle cx="12" cy="7" r="4" />
   </svg>
 );
-const CodeIcon = () => (
+const CodeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -69,7 +73,7 @@ const CodeIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-code"
+    className="lucide lucude-code"
   >
     <path d="m16 2 4 4-4 4" />
     <path d="m8 14-4 4 4 4" />
@@ -77,8 +81,9 @@ const CodeIcon = () => (
     <path d="m3 12 4 0" />
   </svg>
 );
-const GlobeIcon = () => (
+const GlobeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -95,8 +100,9 @@ const GlobeIcon = () => (
     <path d="M2 12h20" />
   </svg>
 );
-const ZapIcon = () => (
+const ZapIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
@@ -111,7 +117,6 @@ const ZapIcon = () => (
     <path d="M4 14a1 1 0 0 1-.78-1.63L12 2l8.78 10.37a1 1 0 0 1-.78 1.63h-3l0 7H7l0-7z" />
   </svg>
 );
-
 // Define the main App component
 const App: React.FC = () => {
   return (
