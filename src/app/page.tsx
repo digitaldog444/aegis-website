@@ -358,6 +358,12 @@ const App: React.FC = () => {
               Contact Us
             </a>
             <a
+              href="https://github.com/project-aegis1/"
+              className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-75"
+            >
+              Github
+            </a>
+            <a
               href="/docs"
               className="bg-transparent border-2 border-teal-500 text-teal-400 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:bg-teal-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-75"
             >
